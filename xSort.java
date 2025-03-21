@@ -9,12 +9,12 @@ public class xSort {
 
     public static void main(String[] args) {
         if (args.length > 2) {
-            System.err.println("Inappropriate num of tapes specified, choose either 1 or 2");
+            System.err.println("Inappropriate num of arguments choose 1 or 2: java xSort 512 2, omitting second argument if you please");
             
         }
         int kway = (args.length == 2) ? Integer.parseInt(args[1]) : 1; //if the second arg is missing then default the value to 1
         if (kway < 1 || kway > 2) {
-            System.err.println("Inappropriate num of tapes specified, choose either 1 or 2");
+            System.err.println("Inappropriate num of tapes specified, choose either 1 or 2 or none");
         }
         int runSize = Integer.parseInt(args[0]); //run size arg
         if (runSize < 64 || runSize > 1024) {
